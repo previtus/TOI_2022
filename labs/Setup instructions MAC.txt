@@ -12,8 +12,13 @@ exec /bin/bash -l
 
 conda create -n toi python==3.9
 
+conda activate toi
+
 conda install wxPython matplotlib scipy numpy scikit-learn jupyter statsmodels pandas
 
-cd TOI/labs
+# Then open the lab notebooks:
+
+git clone https://github.com/previtus/TOI_2022.git
+cd TOI_2022/labs
 
 jupyter notebook
